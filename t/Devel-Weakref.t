@@ -1,7 +1,7 @@
-use mods q{
-  Devel::WeakRef;
-  Test::Helper;
-};
+use strict;
+use integer;
+use Devel::WeakRef;
+use Test::Helper;
 
 my %cnt;
 {

@@ -1,5 +1,5 @@
 -*- Outline -*- $Format: "* Version is $DevelWeakRefRelease$"$
-* Version is 0.002
+* Version is 0.003
 
 * Description
 
@@ -15,8 +15,7 @@ Devel::WeakRef			Weak references.				adcO
 
 * Prerequisites
 
-mods.pm 0.004 or later (JGLICK/ModsPragma-0.004.tar.gz); Test::Helper.pm 0.002
-or later (JGLICK/Test-Helper-0.002.tar.gz).
+For testing, Test::Helper.pm 0.002 or later (JGLICK/Test-Helper-0.002.tar.gz).
 
 * Installation
 

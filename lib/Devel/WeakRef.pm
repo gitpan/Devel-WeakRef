@@ -1,18 +1,16 @@
 package Devel::WeakRef;
-use mods q{
-  DynaLoader();
-  [DynaLoader];
-  # $Format: "  {$VERSION='$DevelWeakRefRelease$'}"$
-  {$VERSION='0.002'}
-};
+use strict;
+use integer;
+use DynaLoader;
+BEGIN {@Devel::WeakRef::ISA=qw(DynaLoader)}
+# $Format: "$\Devel::WeakRef::VERSION='$DevelWeakRefRelease$';"$
+$Devel::WeakRef::VERSION='0.003';
 
-bootstrap Devel::WeakRef $VERSION;
+bootstrap Devel::WeakRef $Devel::WeakRef::VERSION;
 
 package Devel::WeakRef::Table;
-use mods q{
-  Tie::Hash;
-  [Tie::StdHash];
-};
+use Tie::Hash;
+BEGIN {@Devel::WeakRef::Table::ISA=qw(Tie::StdHash)}
 
 1;
 
@@ -113,5 +111,10 @@ custom magic. To avoid this, B<Devel::WeakRef> specifically looks for its own ma
 only its own magic; however, another extension might not do so for itself and become
 extremely confused, if it was specifically looking for its own magic (probably not so
 common).
+
+=head1 REVISION
+
+X<$Format: "F<$Source$> last modified $Date$, release $DevelWeakRefRelease$. $Copyright$"$>
+F<Devel-WeakRef/lib/Devel/WeakRef.pm> last modified Thu, 25 Sep 1997 20:32:00 -0400, release 0.003. Copyright (c) 1997 Strategic Interactive Group. All rights reserved. This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 
 =cut
