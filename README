@@ -1,0 +1,20 @@
+-*- Outline -*- $Format: "* Version is $DevelWeakRefRelease$"$
+* Version is 0.001
+
+* Description
+
+This extension module allows you to use weak references to any
+reference-valued variable (not reference-counted), dereferenced with a
+method call.
+
+* DLSI Synopsis
+
+Devel::WeakRef			Weak references.				adcO
+
+* Prerequisites
+
+mods.pm 0.004 or later (JGLICK/ModsPragma-0.004.tar.gz).
+
+* Author
+
+Jesse Glick <jglick@sig.bsh.com>.

@@ -1,0 +1,10 @@
+-*- Outline -*-
+
+* Better stuff
+Weak-referring hashes & arrays (esp. hashes).
+
+* Related things
+Example cachers and whatnot.
+
+* Tests
+Confirm interaction with other tilde-magic users.
