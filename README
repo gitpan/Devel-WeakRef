@@ -1,11 +1,13 @@
 -*- Outline -*- $Format: "* Version is $DevelWeakRefRelease$"$
-* Version is 0.001
+* Version is 0.002
 
 * Description
 
 This extension module allows you to use weak references to any
 reference-valued variable (not reference-counted), dereferenced with a
-method call.
+method call; with a normal scalar dereference; or as part of a hash lookup.
+
+The interface is *alpha-level*. This is highly experimental.
 
 * DLSI Synopsis
 
@@ -13,7 +15,12 @@ Devel::WeakRef			Weak references.				adcO
 
 * Prerequisites
 
-mods.pm 0.004 or later (JGLICK/ModsPragma-0.004.tar.gz).
+mods.pm 0.004 or later (JGLICK/ModsPragma-0.004.tar.gz); Test::Helper.pm 0.002
+or later (JGLICK/Test-Helper-0.002.tar.gz).
+
+* Installation
+
+The usual: perl Makefile.PL; make all test install.
 
 * Author
 
